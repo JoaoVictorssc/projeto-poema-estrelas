@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Handlee&display=swap');
+
+:root{
+    --fonte-especial:'Beau Rivage', cursive, sans-serif;
+    --fonte-padrao:'Handlee', cursive, sans-serif;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html,body{
+    background-color: white;
+    max-height: 100vh;
+}
+
+header{
+    background-color: darkblue;
+    text-align: center;
+}
+
+header >h1{
+    font-family: var(--fonte-especial);
+    color: white;
+    padding-top: 50px;
+    font-weight: normal;
+}
+
+header >p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 50px;
+}
+
+section.normal >p{
+    font-family: var(--fonte-padrao);
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+    font-size: 1.4em;
+}
+
+section >p{
+    padding-left: 20px;
+}
+
+section.normal{
+    line-height: 2em;
+}
+
+section.imagem >p {
+    background-color: rgba(0, 0, 0, 0.192);
+    width: 250px;
+    color: white;
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 1.3em;
+}
+
+section.imagem{
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 200px;
+    padding-top: 20px;
+}
+
+section#img01{
+    background-image: url(../imagens/imagem01.jpg);
+
+}
+
+section#img02{
+    background-image: url(../imagens/imagem02.jpg);
+    background-position: center center;
+    height: 150px;
+
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.466);
+    text-align: center;
+    color: white;
+}
